@@ -8,8 +8,8 @@ export const profile = {
   location: 'Puebla, México',
   nationality: 'Mexicana y Española',
   email: 'antuane.vazquez04@gmail.com',
-  cvUrl: 'portafolio/AntonioVazquez_CV.pdf', // enlace a tu CV en PDF
-  photo: 'portafolio/public/IMG_0346.JPEG', 
+  cvUrl: '/AntonioVazquez_CV.pdf', // enlace a tu CV en PDF
+  photo: '/IMG_8174.png', 
   roles: ['Frontend con React', 'Interfaces con Tailwind CSS', 'APIs y Node.js'],
 }
 
@@ -17,6 +17,7 @@ export const nav = [
   { id: 'inicio', label: 'Inicio' },
   { id: 'aboutme', label: 'Sobre mí' },
   { id: 'proyectosYTrabajos', label: 'Proyectos y Trabajos' },
+  { id: 'educacion', label: 'Educación'},
   { id: 'certificaciones', label: 'Certificaciones' },
   { id: 'contacto', label: 'Contacto' },
 ]
@@ -28,7 +29,7 @@ export const about = {
   ],
   stats: [
     { value: '1+', label: 'Año de experiencia' },
-    { value: '10+', label: 'Proyectos' },
+    { value: '5+', label: 'Proyectos' },
     { value: '2', label: 'Certificaciones' },
   ],
   skills: [
@@ -37,6 +38,42 @@ export const about = {
     { group: 'Herramientas', items: ['Git', 'GitHub', 'VS Code', 'Figma', 'SAP', 'Canva'] },
   ],
 }
+export const education = [
+  {
+    degree: 'Ingeniería en Sistemas Computacionales',
+    school: 'Universidad Iberoamericana Puebla',
+    period: '2022 - Actualidad',
+    status: 'En curso', // por ejemplo: 'Titulado', 'En curso', 'Pasante'
+    description:
+      'Estudiante de 9° semestre',
+    highlights: [
+      'Subsecretario de Consejo estudiantil 2024 - 2025',
+      '1° lugar en Hackathon interno: Empoderando la recuperación',
+      'Equipo representativo de voleibol de sala varonil',
+      'Italiano A1/A2 durante Primavera y Otoño 2023'
+    ],
+  },
+  {
+    degree: 'Ingeniería Informática',
+    school: 'Universidad de DEUSTO campus Bilbao',
+    period: 'Enero 2025 - Junio 2025',
+    status: 'Intercambio Académico', // por ejemplo: 'Titulado', 'En curso', 'Pasante'
+    description:
+      'Intercambio Académico por parte de la IBERO Puebla',
+    highlights: [
+      'Implementación de ERP SAP en empresas',
+      'Planificación de proyectos',
+    ],
+  },
+  {
+    degree: 'Preparatoria IB',
+    school: 'Fundación Colegio Americano de Puebla',
+    period: '2019 - 2022',
+    status: 'Concluido',
+    description: 'Bajo el programa Diploma del Bachillerato Internacional',
+    highlights: ['Inglés', 'Liderazgo','Trabajo en equipo', 'Pensamiento crítico'],
+  },
+]
 
 export const projects = [
   {
@@ -82,29 +119,18 @@ export const projects = [
 
 export const certifications = [
   {
-    title: 'Desarrollo Web Full Stack',
-    issuer: 'Plataforma / Institución',
-    date: '2025',
-    url: '#',
+    title: 'Introducción al Internet de las Cosas y Transformación Digital',
+    issuer: 'Cisco Networking Academy',
+    date: '2026',
+    url: 'https://www.netacad.com/certificates/?issuanceId=8ac770fc-d376-45a4-8b06-8e50f1c1ff44',
   },
   {
-    title: 'React: de cero a experto',
-    issuer: 'Plataforma / Institución',
+    title: 'Introducción a las Tecnologías Emergentes: Edición 2024',
+    issuer: 'Santander Open Academy',
     date: '2024',
-    url: '#',
+    url: 'https://drive.google.com/file/d/1PMvt4WKFAolMj8hG8ZVG1xUIKwn61Cbx/view?usp=sharing',
   },
-  {
-    title: 'JavaScript Avanzado',
-    issuer: 'Plataforma / Institución',
-    date: '2024',
-    url: '#',
-  },
-  {
-    title: 'Diseño Responsivo con CSS',
-    issuer: 'Plataforma / Institución',
-    date: '2023',
-    url: '#',
-  },
+  
 ]
 
 export const socials = [
